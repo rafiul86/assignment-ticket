@@ -75,7 +75,7 @@
                         <input id="economy-class" class="inp-style inp-width" type="number" value="0">
                     </div>
                     <div class="plus-minus-btn">
-                        <p> <span onclick="TicketHandler('economy' ,true)"> + </span> <span onclick="TicketHandler('economy' ,false)"> - </span> </p>
+                        <p> <span onclick="TicketHandler('economy' ,true)"> + </span>  <span onclick="TicketHandler('economy' ,false)"> - </span> </p>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@
                             }
                         ticketInput.value = ticketNewCount ;
                     calculateTicketPrice() 
-                 };
+                 }
 
              function calculateTicketPrice(){
                     const classTicket = document.getElementById('first-class');
@@ -141,7 +141,6 @@
             const grandTotal = subTotal + taxCount ;
             document.getElementById('grand-total').innerText = grandTotal;
              }
-            }
          </script>
 </body>
 </html>
